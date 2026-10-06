@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MemberCollViewCell" customModule="TAGCredit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="224" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="224" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLF-eU-oM5">
+                        <rect key="frame" x="5" y="5" width="214" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 72231" translatesAutoresizingMaskIntoConstraints="NO" id="OIu-B6-uM2">
+                                <rect key="frame" x="7" y="12" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="38F-ul-a0J"/>
+                                    <constraint firstAttribute="height" constant="36" id="dcP-Ln-VVu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John smith" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSq-Mh-aRI">
+                                <rect key="frame" x="49" y="12.666666666666668" width="160" height="14.666666666666668"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                <color key="textColor" name="appBlackColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manager" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQH-vq-yW8">
+                                <rect key="frame" x="49" y="30.333333333333339" width="160" height="13.666666666666668"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="11"/>
+                                <color key="textColor" name="appGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xUe-qN-F1J">
+                                <rect key="frame" x="184" y="20" width="20" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xh7-u3-cwj">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="appGredientEnd"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="xh7-u3-cwj" secondAttribute="trailing" id="2cJ-jh-oiV"/>
+                                    <constraint firstAttribute="height" constant="20" id="BUc-xN-cSu"/>
+                                    <constraint firstAttribute="width" constant="20" id="Ek0-j9-EfB"/>
+                                    <constraint firstAttribute="bottom" secondItem="xh7-u3-cwj" secondAttribute="bottom" id="VNp-nc-oSy"/>
+                                    <constraint firstItem="xh7-u3-cwj" firstAttribute="top" secondItem="xUe-qN-F1J" secondAttribute="top" id="p1h-1P-Arr"/>
+                                    <constraint firstItem="xh7-u3-cwj" firstAttribute="leading" secondItem="xUe-qN-F1J" secondAttribute="leading" id="qVE-B9-dEZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="G3z-4Y-fYz"/>
+                            <constraint firstItem="zQH-vq-yW8" firstAttribute="leading" secondItem="rSq-Mh-aRI" secondAttribute="leading" id="GR8-P6-7xF"/>
+                            <constraint firstItem="OIu-B6-uM2" firstAttribute="centerY" secondItem="qLF-eU-oM5" secondAttribute="centerY" id="HUd-EQ-j0g"/>
+                            <constraint firstItem="xUe-qN-F1J" firstAttribute="centerY" secondItem="OIu-B6-uM2" secondAttribute="centerY" id="IFV-wc-KLz"/>
+                            <constraint firstItem="zQH-vq-yW8" firstAttribute="top" secondItem="rSq-Mh-aRI" secondAttribute="bottom" constant="3" id="NSY-R2-rdF"/>
+                            <constraint firstAttribute="trailing" secondItem="rSq-Mh-aRI" secondAttribute="trailing" constant="5" id="UTU-6w-OTS"/>
+                            <constraint firstItem="zQH-vq-yW8" firstAttribute="trailing" secondItem="rSq-Mh-aRI" secondAttribute="trailing" id="fkw-Jn-JZp"/>
+                            <constraint firstItem="rSq-Mh-aRI" firstAttribute="centerY" secondItem="OIu-B6-uM2" secondAttribute="centerY" constant="-10" id="gxS-fW-SaS"/>
+                            <constraint firstItem="rSq-Mh-aRI" firstAttribute="leading" secondItem="OIu-B6-uM2" secondAttribute="trailing" constant="6" id="pWl-u3-fcR"/>
+                            <constraint firstAttribute="trailing" secondItem="xUe-qN-F1J" secondAttribute="trailing" constant="10" id="sjX-W4-oAF"/>
+                            <constraint firstItem="OIu-B6-uM2" firstAttribute="leading" secondItem="qLF-eU-oM5" secondAttribute="leading" constant="7" id="zAY-6y-27t"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="appGrayColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qLF-eU-oM5" secondAttribute="trailing" constant="5" id="3vg-fZ-Khy"/>
+                <constraint firstItem="qLF-eU-oM5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="dlm-lg-K3f"/>
+                <constraint firstAttribute="bottom" secondItem="qLF-eU-oM5" secondAttribute="bottom" constant="5" id="h9f-tc-K3f"/>
+                <constraint firstItem="qLF-eU-oM5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="xVZ-i9-lRl"/>
+            </constraints>
+            <size key="customSize" width="224" height="205"/>
+            <connections>
+                <outlet property="centerTitle" destination="gxS-fW-SaS" id="Y3c-Nc-nWH"/>
+                <outlet property="countView" destination="xUe-qN-F1J" id="1gA-dI-Foc"/>
+                <outlet property="imgView" destination="OIu-B6-uM2" id="1Yu-Li-CDm"/>
+                <outlet property="lblStatus" destination="zQH-vq-yW8" id="rj9-0D-vRs"/>
+                <outlet property="lblTitle" destination="rSq-Mh-aRI" id="sJ9-h9-0p8"/>
+                <outlet property="mainView" destination="qLF-eU-oM5" id="prM-Hl-pJb"/>
+                <outlet property="viewNotification" destination="xh7-u3-cwj" id="igM-VL-bWt"/>
+            </connections>
+            <point key="canvasLocation" x="236.64122137404578" y="43.309859154929576"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Group 72231" width="16" height="16"/>
+        <namedColor name="appBlackColor">
+            <color red="0.043137254901960784" green="0.043137254901960784" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appGrayColor">
+            <color red="0.44705882352941179" green="0.44705882352941179" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appGredientEnd">
+            <color red="0.2627450980392157" green="0.7803921568627451" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

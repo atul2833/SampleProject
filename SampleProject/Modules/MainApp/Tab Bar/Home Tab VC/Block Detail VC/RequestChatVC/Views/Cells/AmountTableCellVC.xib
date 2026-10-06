@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="212" id="KGk-i7-Jjw" customClass="AmountTableCellVC" customModule="TAGCredit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="212"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="212"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID number:" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUs-iG-hrZ">
+                        <rect key="frame" x="12" y="10" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="GH1-b8-a0o"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                        <color key="textColor" name="appBlackColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID number:" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynC-pi-5A8">
+                        <rect key="frame" x="319.33333333333331" y="10" width="81.666666666666686" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="U8Q-bd-tUw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                        <color key="textColor" name="appBlackColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1B6-e0-WwG">
+                        <rect key="frame" x="12" y="40" width="389" height="1"/>
+                        <color key="backgroundColor" name="appLightGrayColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="aop-if-clO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1B6-e0-WwG" firstAttribute="top" secondItem="cUs-iG-hrZ" secondAttribute="bottom" constant="10" id="A0c-aw-ULp"/>
+                    <constraint firstItem="cUs-iG-hrZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="AIt-Cv-res"/>
+                    <constraint firstAttribute="trailing" secondItem="ynC-pi-5A8" secondAttribute="trailing" constant="12" id="OWY-VD-cPV"/>
+                    <constraint firstItem="ynC-pi-5A8" firstAttribute="centerY" secondItem="cUs-iG-hrZ" secondAttribute="centerY" id="Uaq-fA-lWi"/>
+                    <constraint firstItem="1B6-e0-WwG" firstAttribute="trailing" secondItem="ynC-pi-5A8" secondAttribute="trailing" id="YNU-tf-vr0"/>
+                    <constraint firstItem="1B6-e0-WwG" firstAttribute="leading" secondItem="cUs-iG-hrZ" secondAttribute="leading" id="eB1-ZN-ZHo"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1B6-e0-WwG" secondAttribute="bottom" constant="2" id="vGo-1e-F0A"/>
+                    <constraint firstItem="cUs-iG-hrZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="zDf-v2-O0f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblSubTitle" destination="ynC-pi-5A8" id="G4E-2H-HXC"/>
+                <outlet property="lblTitle" destination="cUs-iG-hrZ" id="ztR-rG-6n6"/>
+            </connections>
+            <point key="canvasLocation" x="200.76335877862596" y="47.887323943661976"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="appBlackColor">
+            <color red="0.043137254901960784" green="0.043137254901960784" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appLightGrayColor">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

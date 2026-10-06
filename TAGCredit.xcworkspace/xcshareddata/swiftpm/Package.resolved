@@ -1,0 +1,60 @@
+{
+  "originHash" : "5e8b3b4b87c056b143516b1b392dc675b72c684a3455ee4f525ada3091f68612",
+  "pins" : [
+    {
+      "identity" : "bsimagepicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mikaoj/BSImagePicker.git",
+      "state" : {
+        "revision" : "b5a77ac0921ef603caa62a1f674c9999d68b80a5",
+        "version" : "3.3.2"
+      }
+    },
+    {
+      "identity" : "cryptoswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/CryptoSwift.git",
+      "state" : {
+        "revision" : "c9c3df6ab812de32bae61fc0cd1bf6d45170ebf0",
+        "version" : "1.8.2"
+      }
+    },
+    {
+      "identity" : "iqkeyboardmanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackiftekhar/IQKeyboardManager.git",
+      "state" : {
+        "revision" : "5d30eba093678d05a6d5d1800f8c1d2121c7e3dd",
+        "version" : "7.0.2"
+      }
+    },
+    {
+      "identity" : "keychain-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/evgenyneu/keychain-swift.git",
+      "state" : {
+        "revision" : "d108a1fa6189e661f91560548ef48651ed8d93b9",
+        "version" : "20.0.0"
+      }
+    },
+    {
+      "identity" : "progresshud",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/relatedcode/ProgressHUD.git",
+      "state" : {
+        "revision" : "fd18c75d5f650a949e1da5fc725a1c1b523bbf8e",
+        "version" : "14.1.1"
+      }
+    },
+    {
+      "identity" : "sdwebimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SDWebImage/SDWebImage.git",
+      "state" : {
+        "revision" : "f6afa0132961d593f07970d84e2d8b588c29ea04",
+        "version" : "5.19.1"
+      }
+    }
+  ],
+  "version" : 3
+}

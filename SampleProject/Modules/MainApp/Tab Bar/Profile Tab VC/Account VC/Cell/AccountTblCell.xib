@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="122" id="KGk-i7-Jjw" customClass="AccountTblCell" customModule="TAGCredit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6n-eJ-JGW">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="122"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8IU-m8-Nvh">
+                                <rect key="frame" x="0.0" y="0.0" width="357" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwF-tn-X8m">
+                                        <rect key="frame" x="12" y="15" width="93" height="20"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon feather-chevron-down-11" translatesAutoresizingMaskIntoConstraints="NO" id="BJU-6J-VI4">
+                                        <rect key="frame" x="337.5" y="19" width="7.5" height="12.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="018-nb-GsJ">
+                                        <rect key="frame" x="287.5" y="17" width="45" height="16"/>
+                                        <color key="backgroundColor" red="0.59215686274509804" green="0.81960784313725488" blue="0.99215686274509807" alpha="0.51051476883561642" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="pUy-Tf-5cw"/>
+                                            <constraint firstAttribute="width" constant="45" id="zCK-nH-4wa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                                        <color key="textColor" name="appBaseColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="appGrayBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="kwF-tn-X8m" firstAttribute="centerY" secondItem="8IU-m8-Nvh" secondAttribute="centerY" id="Ed1-7f-WPe"/>
+                                    <constraint firstItem="018-nb-GsJ" firstAttribute="centerY" secondItem="BJU-6J-VI4" secondAttribute="centerY" id="FVI-aS-vpd"/>
+                                    <constraint firstAttribute="height" constant="50" id="GLw-48-yfA"/>
+                                    <constraint firstItem="BJU-6J-VI4" firstAttribute="centerY" secondItem="kwF-tn-X8m" secondAttribute="centerY" id="HWE-nk-G2c"/>
+                                    <constraint firstItem="kwF-tn-X8m" firstAttribute="leading" secondItem="8IU-m8-Nvh" secondAttribute="leading" constant="12" id="Hrs-hr-rFL"/>
+                                    <constraint firstItem="BJU-6J-VI4" firstAttribute="leading" secondItem="018-nb-GsJ" secondAttribute="trailing" constant="5" id="OpI-uY-tf4"/>
+                                    <constraint firstAttribute="trailing" secondItem="BJU-6J-VI4" secondAttribute="trailing" constant="12" id="WpD-Rz-Iw8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8IU-m8-Nvh" firstAttribute="top" secondItem="U6n-eJ-JGW" secondAttribute="top" id="F3G-gl-HWe"/>
+                            <constraint firstAttribute="trailing" secondItem="8IU-m8-Nvh" secondAttribute="trailing" id="ivt-E2-cRs"/>
+                            <constraint firstItem="8IU-m8-Nvh" firstAttribute="leading" secondItem="U6n-eJ-JGW" secondAttribute="leading" id="mWd-2Y-AAX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="U6n-eJ-JGW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9HL-4U-aHA"/>
+                    <constraint firstAttribute="trailing" secondItem="U6n-eJ-JGW" secondAttribute="trailing" id="KmT-pc-WOV"/>
+                    <constraint firstItem="U6n-eJ-JGW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="n9j-KC-G6V"/>
+                    <constraint firstAttribute="bottom" secondItem="U6n-eJ-JGW" secondAttribute="bottom" id="tCf-b9-vY9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgArrow" destination="BJU-6J-VI4" id="rH8-No-T7S"/>
+                <outlet property="lbl" destination="kwF-tn-X8m" id="1Gy-sc-eSA"/>
+                <outlet property="lbl_des" destination="018-nb-GsJ" id="chU-mg-9Sd"/>
+            </connections>
+            <point key="canvasLocation" x="126.81159420289856" y="122.54464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Icon feather-chevron-down-11" width="7.5" height="12.5"/>
+        <namedColor name="appBaseColor">
+            <color red="0.0" green="0.35686274509803922" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appGrayBackgroundColor">
+            <color red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

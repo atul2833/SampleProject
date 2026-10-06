@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubscriptionVC" customModule="TAGCredit" customModuleProvider="target">
+            <connections>
+                <outlet property="backView" destination="26v-CS-84h" id="LMq-YV-wOC"/>
+                <outlet property="collecView" destination="qf5-Aw-7oH" id="Eqm-4m-Lqq"/>
+                <outlet property="heightCollView" destination="dBt-Dq-63T" id="Kdz-N9-Fl6"/>
+                <outlet property="heightTblView" destination="Sj8-HQ-B7U" id="dfk-U6-33y"/>
+                <outlet property="lblListTitle" destination="Np8-Kz-Clz" id="x9E-hj-VSk"/>
+                <outlet property="tblView" destination="1SQ-iX-rcm" id="Dhq-xe-txg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="26v-CS-84h">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRz-vg-YrO">
+                            <rect key="frame" x="0.0" y="50" width="393" height="802"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a contribution plan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ea0-DM-uQt">
+                                    <rect key="frame" x="12" y="20" width="369" height="23.333333333333329"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="19"/>
+                                    <color key="textColor" name="appBlackColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQC-iq-6MK">
+                                    <rect key="frame" x="12" y="53.333333333333329" width="369" height="34.333333333333329"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                    <color key="textColor" name="appGrayColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qf5-Aw-7oH">
+                                    <rect key="frame" x="12" y="107.66666666666666" width="369" height="169.99999999999997"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="170" id="dBt-Dq-63T"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="lhL-eC-NZN">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="7F1-Pk-veQ"/>
+                                        <outlet property="delegate" destination="-1" id="bkm-VE-UDd"/>
+                                    </connections>
+                                </collectionView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Contribution Plan" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np8-Kz-Clz">
+                                    <rect key="frame" x="12" y="297.66666666666669" width="369" height="23.333333333333314"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="19"/>
+                                    <color key="textColor" name="appBlackColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" rowHeight="40" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1SQ-iX-rcm">
+                                    <rect key="frame" x="12" y="331" width="369" height="386"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="386" id="Sj8-HQ-B7U"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="GlX-Xi-Dzg"/>
+                                        <outlet property="delegate" destination="-1" id="iae-Q5-4mC"/>
+                                    </connections>
+                                </tableView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7n-ST-tM3">
+                                    <rect key="frame" x="12" y="737" width="369" height="45"/>
+                                    <color key="backgroundColor" name="appBaseColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="Wbe-mi-weO"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                    <state key="normal" title="Continue">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="continueBtnAction:" destination="-1" eventType="touchUpInside" id="3Z1-FQ-hU5"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="G7n-ST-tM3" firstAttribute="trailing" secondItem="1SQ-iX-rcm" secondAttribute="trailing" id="2PR-q0-rEG"/>
+                                <constraint firstItem="1SQ-iX-rcm" firstAttribute="trailing" secondItem="Np8-Kz-Clz" secondAttribute="trailing" id="3ha-Lz-xWv"/>
+                                <constraint firstAttribute="trailing" secondItem="ea0-DM-uQt" secondAttribute="trailing" id="64Y-gT-wzU"/>
+                                <constraint firstItem="yQC-iq-6MK" firstAttribute="trailing" secondItem="ea0-DM-uQt" secondAttribute="trailing" id="CSy-dy-rAC"/>
+                                <constraint firstItem="1SQ-iX-rcm" firstAttribute="top" secondItem="Np8-Kz-Clz" secondAttribute="bottom" constant="10" id="EbZ-sT-t6E"/>
+                                <constraint firstItem="Np8-Kz-Clz" firstAttribute="trailing" secondItem="ea0-DM-uQt" secondAttribute="trailing" id="FgG-fF-yow"/>
+                                <constraint firstItem="qf5-Aw-7oH" firstAttribute="centerX" secondItem="aRz-vg-YrO" secondAttribute="centerX" id="Fks-Rb-gnb"/>
+                                <constraint firstItem="ea0-DM-uQt" firstAttribute="leading" secondItem="aRz-vg-YrO" secondAttribute="leading" constant="12" id="NAl-xR-q36"/>
+                                <constraint firstItem="Np8-Kz-Clz" firstAttribute="top" secondItem="qf5-Aw-7oH" secondAttribute="bottom" constant="20" id="W1v-2J-gYw"/>
+                                <constraint firstItem="qf5-Aw-7oH" firstAttribute="top" secondItem="yQC-iq-6MK" secondAttribute="bottom" constant="20" id="WZ3-Ip-60b"/>
+                                <constraint firstItem="yQC-iq-6MK" firstAttribute="top" secondItem="ea0-DM-uQt" secondAttribute="bottom" constant="10" id="X2B-hd-6iE"/>
+                                <constraint firstItem="qf5-Aw-7oH" firstAttribute="trailing" secondItem="ea0-DM-uQt" secondAttribute="trailing" id="ZYl-MB-4vh"/>
+                                <constraint firstItem="G7n-ST-tM3" firstAttribute="top" secondItem="1SQ-iX-rcm" secondAttribute="bottom" constant="20" id="a5e-01-vg0"/>
+                                <constraint firstItem="yQC-iq-6MK" firstAttribute="leading" secondItem="ea0-DM-uQt" secondAttribute="leading" id="baR-xe-yQD"/>
+                                <constraint firstAttribute="bottom" secondItem="G7n-ST-tM3" secondAttribute="bottom" constant="20" id="bt0-Rm-wyK"/>
+                                <constraint firstItem="G7n-ST-tM3" firstAttribute="leading" secondItem="1SQ-iX-rcm" secondAttribute="leading" id="cTO-fu-agh"/>
+                                <constraint firstItem="qf5-Aw-7oH" firstAttribute="leading" secondItem="ea0-DM-uQt" secondAttribute="leading" id="dJG-el-sJP"/>
+                                <constraint firstItem="Np8-Kz-Clz" firstAttribute="leading" secondItem="ea0-DM-uQt" secondAttribute="leading" id="ky5-2C-Si4"/>
+                                <constraint firstItem="ea0-DM-uQt" firstAttribute="top" secondItem="aRz-vg-YrO" secondAttribute="top" constant="20" id="omv-fh-w4c"/>
+                                <constraint firstItem="1SQ-iX-rcm" firstAttribute="leading" secondItem="Np8-Kz-Clz" secondAttribute="leading" id="oq4-WT-WMi"/>
+                            </constraints>
+                            <viewLayoutGuide key="contentLayoutGuide" id="mvu-Ge-8Xm"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="WkV-wD-6Qd"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="aRz-vg-YrO" firstAttribute="leading" secondItem="26v-CS-84h" secondAttribute="leading" id="M2f-9n-K37"/>
+                        <constraint firstItem="aRz-vg-YrO" firstAttribute="top" secondItem="26v-CS-84h" secondAttribute="top" constant="50" id="a1M-dV-Z8g"/>
+                        <constraint firstAttribute="bottom" secondItem="aRz-vg-YrO" secondAttribute="bottom" id="aXL-tx-487"/>
+                        <constraint firstAttribute="trailing" secondItem="aRz-vg-YrO" secondAttribute="trailing" id="rQZ-qv-R32"/>
+                        <constraint firstItem="aRz-vg-YrO" firstAttribute="centerX" secondItem="26v-CS-84h" secondAttribute="centerX" id="tbQ-O9-1bk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="26v-CS-84h" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Fuk-zn-zCU"/>
+                <constraint firstItem="26v-CS-84h" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ePY-ls-mB7"/>
+                <constraint firstAttribute="bottom" secondItem="26v-CS-84h" secondAttribute="bottom" id="fwb-dF-By2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="26v-CS-84h" secondAttribute="trailing" id="mkc-iR-4bF"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="appBaseColor">
+            <color red="0.0" green="0.35686274509803922" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appBlackColor">
+            <color red="0.043137254901960784" green="0.043137254901960784" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appGrayColor">
+            <color red="0.44705882352941179" green="0.44705882352941179" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

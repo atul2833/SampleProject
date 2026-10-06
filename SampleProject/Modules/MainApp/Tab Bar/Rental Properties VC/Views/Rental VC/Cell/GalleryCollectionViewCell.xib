@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GalleryCollectionViewCell" customModule="TAGCreditMerchant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="264"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="308" height="264"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xjz-Oi-pLA">
+                        <rect key="frame" x="0.0" y="0.0" width="308" height="264"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hku-m0-aoA">
+                                <rect key="frame" x="0.0" y="0.0" width="308" height="254"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="thM-ah-IKj">
+                                <rect key="frame" x="0.0" y="0.0" width="308" height="254"/>
+                                <color key="backgroundColor" name="appLightBaseColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Lea-xu-iPx">
+                                <rect key="frame" x="134" y="113" width="40" height="38.666666666666686"/>
+                                <color key="tintColor" name="appBaseColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Mzu-3d-CnF"/>
+                                    <constraint firstAttribute="height" constant="40" id="bx6-0b-12a"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="thM-ah-IKj" firstAttribute="top" secondItem="xjz-Oi-pLA" secondAttribute="top" id="4bv-es-dLB"/>
+                            <constraint firstItem="Hku-m0-aoA" firstAttribute="leading" secondItem="xjz-Oi-pLA" secondAttribute="leading" id="9s6-DU-0Jf"/>
+                            <constraint firstItem="thM-ah-IKj" firstAttribute="leading" secondItem="xjz-Oi-pLA" secondAttribute="leading" id="Agq-6p-RLM"/>
+                            <constraint firstItem="Lea-xu-iPx" firstAttribute="centerX" secondItem="xjz-Oi-pLA" secondAttribute="centerX" id="Hed-Ve-TPo"/>
+                            <constraint firstAttribute="trailing" secondItem="Hku-m0-aoA" secondAttribute="trailing" id="PsM-NC-1Ok"/>
+                            <constraint firstItem="Lea-xu-iPx" firstAttribute="centerY" secondItem="xjz-Oi-pLA" secondAttribute="centerY" id="Rtf-nL-Y5q"/>
+                            <constraint firstAttribute="bottom" secondItem="Hku-m0-aoA" secondAttribute="bottom" constant="10" id="ZX8-Mm-OHJ"/>
+                            <constraint firstAttribute="trailing" secondItem="thM-ah-IKj" secondAttribute="trailing" id="aIa-Bo-jG7"/>
+                            <constraint firstItem="Hku-m0-aoA" firstAttribute="top" secondItem="xjz-Oi-pLA" secondAttribute="top" id="euM-sH-XNM"/>
+                            <constraint firstAttribute="bottom" secondItem="thM-ah-IKj" secondAttribute="bottom" constant="10" id="hIo-ub-CL7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xjz-Oi-pLA" secondAttribute="trailing" id="9sT-yn-v1R"/>
+                <constraint firstItem="xjz-Oi-pLA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EdM-MN-ab1"/>
+                <constraint firstItem="xjz-Oi-pLA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Rry-84-otm"/>
+                <constraint firstAttribute="bottom" secondItem="xjz-Oi-pLA" secondAttribute="bottom" id="Vck-LD-Dbh"/>
+            </constraints>
+            <size key="customSize" width="308" height="264"/>
+            <connections>
+                <outlet property="imgVideo" destination="Lea-xu-iPx" id="itk-Te-9NU"/>
+                <outlet property="imgView" destination="thM-ah-IKj" id="cmn-lb-MD0"/>
+                <outlet property="videoView" destination="Hku-m0-aoA" id="MdJ-F1-HMr"/>
+            </connections>
+            <point key="canvasLocation" x="119.08396946564885" y="64.08450704225352"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play.circle.fill" catalog="system" width="128" height="123"/>
+        <namedColor name="appBaseColor">
+            <color red="0.0" green="0.35686274509803922" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appLightBaseColor">
+            <color red="0.93725490196078431" green="0.97254901960784312" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

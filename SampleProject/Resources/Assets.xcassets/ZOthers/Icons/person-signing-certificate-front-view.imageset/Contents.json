@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "person-signing-certificate-front-view.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "person-signing-certificate-front-view@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "person-signing-certificate-front-view@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

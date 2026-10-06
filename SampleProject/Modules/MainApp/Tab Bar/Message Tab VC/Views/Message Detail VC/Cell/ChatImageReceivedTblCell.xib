@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="252" id="KGk-i7-Jjw" customClass="ChatImageReceivedTblCell" customModule="TAGCreditMerchant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="252"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="454" height="252"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UpL-Gh-oV2">
+                        <rect key="frame" x="0.0" y="0.0" width="454" height="252"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJP-Yk-K2L">
+                                <rect key="frame" x="12" y="25.666666666666671" width="200" height="201.33333333333331"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fzp-yK-Woc">
+                                        <rect key="frame" x="5" y="5" width="190" height="191.33333333333334"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="appLightBaseColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Fzp-yK-Woc" secondAttribute="bottom" constant="5" id="OIy-t9-ugV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fzp-yK-Woc" secondAttribute="trailing" constant="5" id="PsF-Bs-ywu"/>
+                                    <constraint firstItem="Fzp-yK-Woc" firstAttribute="top" secondItem="gJP-Yk-K2L" secondAttribute="top" constant="5" id="dTk-3x-grb"/>
+                                    <constraint firstItem="Fzp-yK-Woc" firstAttribute="leading" secondItem="gJP-Yk-K2L" secondAttribute="leading" constant="5" id="hkc-Sr-Z2S"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04:00PM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ybv-oT-5Te">
+                                <rect key="frame" x="12" y="232" width="50" height="10"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
+                                <color key="textColor" name="appGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gJP-Yk-K2L" firstAttribute="leading" secondItem="UpL-Gh-oV2" secondAttribute="leading" constant="12" id="A1c-V6-5f3"/>
+                            <constraint firstItem="gJP-Yk-K2L" firstAttribute="top" secondItem="UpL-Gh-oV2" secondAttribute="top" constant="25.670000000000002" id="DDu-Ml-mHl"/>
+                            <constraint firstAttribute="bottom" secondItem="gJP-Yk-K2L" secondAttribute="bottom" constant="25" id="N1w-Jg-cfz"/>
+                            <constraint firstAttribute="bottom" secondItem="Ybv-oT-5Te" secondAttribute="bottom" constant="10" id="VDu-ga-XMa"/>
+                            <constraint firstItem="Ybv-oT-5Te" firstAttribute="leading" secondItem="gJP-Yk-K2L" secondAttribute="leading" id="kCk-J6-DHz"/>
+                            <constraint firstItem="Ybv-oT-5Te" firstAttribute="top" secondItem="gJP-Yk-K2L" secondAttribute="bottom" constant="5" id="xtK-aJ-t5u"/>
+                            <constraint firstAttribute="trailing" secondItem="gJP-Yk-K2L" secondAttribute="trailing" constant="242" id="z2U-Yt-gOf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="UpL-Gh-oV2" secondAttribute="trailing" id="A3t-Zt-1CF"/>
+                    <constraint firstAttribute="bottom" secondItem="UpL-Gh-oV2" secondAttribute="bottom" id="D1O-b9-Z9p"/>
+                    <constraint firstItem="UpL-Gh-oV2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UUw-CC-VqC"/>
+                    <constraint firstItem="UpL-Gh-oV2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jmJ-C9-B0P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backView" destination="gJP-Yk-K2L" id="rMq-Zf-c6V"/>
+                <outlet property="imgView" destination="Fzp-yK-Woc" id="4LC-CT-NNg"/>
+                <outlet property="timeLbl" destination="Ybv-oT-5Te" id="0xM-5j-aMA"/>
+            </connections>
+            <point key="canvasLocation" x="233.58778625954199" y="61.971830985915496"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="appGrayColor">
+            <color red="0.44705882352941179" green="0.44705882352941179" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appLightBaseColor">
+            <color red="0.93725490196078431" green="0.97254901960784312" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

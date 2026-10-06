@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReasonCancelVC" customModule="TAGCredit" customModuleProvider="target">
+            <connections>
+                <outlet property="txtReason" destination="EV3-0L-lyZ" id="7K5-Xw-YHM"/>
+                <outlet property="view" destination="PYE-dB-ZgJ" id="Ixl-7z-jLf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="PYE-dB-ZgJ">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQp-xS-Lmm">
+                    <rect key="frame" x="40" y="266" width="313" height="320"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reason of Reject" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUx-nt-nWy">
+                            <rect key="frame" x="12" y="115" width="289" height="22"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                            <color key="textColor" name="appBaseColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPt-dW-9dM">
+                            <rect key="frame" x="12" y="147" width="289" height="38.333333333333343"/>
+                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                            <color key="textColor" name="appLightGrayTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krZ-zI-5cF" customClass="ResponsiveButton" customModule="TAGCredit" customModuleProvider="target">
+                            <rect key="frame" x="12" y="255" width="134.66666666666666" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="6Bh-xR-lbg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" name="appBlackColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="appLightGrayTextColor"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="continueAction:" destination="-1" eventType="touchUpInside" id="jOR-Lz-dHT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yy4-hb-ZcS" customClass="ResponsiveButton" customModule="TAGCredit" customModuleProvider="target">
+                            <rect key="frame" x="166.66666666666663" y="255" width="134.33333333333337" height="45"/>
+                            <color key="backgroundColor" name="appBaseColor"/>
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                            <state key="normal" title="Confirm">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="continueAction:" destination="-1" eventType="touchUpInside" id="GRG-hk-hMK"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon metro-cancel" translatesAutoresizingMaskIntoConstraints="NO" id="YKm-BZ-Tmb">
+                            <rect key="frame" x="263" y="10" width="40" height="30"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="d3i-ZH-317" customClass="ResponsiveButton" customModule="TAGCredit" customModuleProvider="target">
+                            <rect key="frame" x="263" y="10" width="40" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="Xy9-ko-Itr"/>
+                                <constraint firstAttribute="height" constant="30" id="vqG-Tw-iAz"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title=" ">
+                                <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="continueAction:" destination="-1" eventType="touchUpInside" id="VRb-8t-Czl"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 71529" translatesAutoresizingMaskIntoConstraints="NO" id="gXi-vr-xE6">
+                            <rect key="frame" x="124" y="30" width="65" height="65"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="JKJ-tb-om6"/>
+                                <constraint firstAttribute="width" constant="65" id="WIi-gp-sX2"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wg5-R8-B0C">
+                            <rect key="frame" x="12" y="200.33333333333331" width="289" height="45"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EV3-0L-lyZ">
+                                    <rect key="frame" x="10" y="0.0" width="279" height="45"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon feather-chevron-down-15" translatesAutoresizingMaskIntoConstraints="NO" id="F6V-i8-irE">
+                                    <rect key="frame" x="254" y="0.0" width="35" height="45"/>
+                                    <color key="tintColor" name="appBGColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="35" id="TC3-hm-UEy"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="F6V-i8-irE" firstAttribute="top" secondItem="Wg5-R8-B0C" secondAttribute="top" id="HcJ-qU-OY9"/>
+                                <constraint firstAttribute="trailing" secondItem="EV3-0L-lyZ" secondAttribute="trailing" id="VUg-oK-t1p"/>
+                                <constraint firstAttribute="height" constant="45" id="iFQ-4i-4kh"/>
+                                <constraint firstAttribute="bottom" secondItem="F6V-i8-irE" secondAttribute="bottom" id="iOH-XX-TDE"/>
+                                <constraint firstItem="EV3-0L-lyZ" firstAttribute="top" secondItem="Wg5-R8-B0C" secondAttribute="top" id="sa8-pQ-f6h"/>
+                                <constraint firstItem="EV3-0L-lyZ" firstAttribute="leading" secondItem="Wg5-R8-B0C" secondAttribute="leading" constant="10" id="tSJ-Gr-fjP"/>
+                                <constraint firstAttribute="bottom" secondItem="EV3-0L-lyZ" secondAttribute="bottom" id="wxW-6w-SAW"/>
+                                <constraint firstAttribute="trailing" secondItem="F6V-i8-irE" secondAttribute="trailing" id="yBp-YB-0Lo"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" systemColor="systemGray5Color"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="HUx-nt-nWy" secondAttribute="trailing" constant="12" id="3YT-SN-yap"/>
+                        <constraint firstItem="Yy4-hb-ZcS" firstAttribute="width" secondItem="krZ-zI-5cF" secondAttribute="width" id="7kM-Ra-3zC"/>
+                        <constraint firstItem="d3i-ZH-317" firstAttribute="top" secondItem="mQp-xS-Lmm" secondAttribute="top" constant="10" id="9wL-Up-hPu"/>
+                        <constraint firstItem="oPt-dW-9dM" firstAttribute="top" secondItem="HUx-nt-nWy" secondAttribute="bottom" constant="10" id="DRV-r9-xBU"/>
+                        <constraint firstAttribute="trailing" secondItem="d3i-ZH-317" secondAttribute="trailing" constant="10" id="EVW-bU-Rax"/>
+                        <constraint firstItem="YKm-BZ-Tmb" firstAttribute="leading" secondItem="d3i-ZH-317" secondAttribute="leading" id="F6F-x6-BUQ"/>
+                        <constraint firstItem="Yy4-hb-ZcS" firstAttribute="height" secondItem="krZ-zI-5cF" secondAttribute="height" id="GQg-PS-BNd"/>
+                        <constraint firstItem="HUx-nt-nWy" firstAttribute="top" secondItem="mQp-xS-Lmm" secondAttribute="top" constant="115" id="IKH-Hl-LKT"/>
+                        <constraint firstItem="YKm-BZ-Tmb" firstAttribute="top" secondItem="d3i-ZH-317" secondAttribute="top" id="Wq8-oV-bMV"/>
+                        <constraint firstItem="HUx-nt-nWy" firstAttribute="leading" secondItem="mQp-xS-Lmm" secondAttribute="leading" constant="12" id="WvH-aM-7Wb"/>
+                        <constraint firstItem="oPt-dW-9dM" firstAttribute="trailing" secondItem="HUx-nt-nWy" secondAttribute="trailing" id="X4k-vk-j0W"/>
+                        <constraint firstAttribute="height" constant="320" id="Yma-Sf-RAo"/>
+                        <constraint firstItem="krZ-zI-5cF" firstAttribute="leading" secondItem="oPt-dW-9dM" secondAttribute="leading" id="c6t-4V-lf2"/>
+                        <constraint firstItem="Yy4-hb-ZcS" firstAttribute="leading" secondItem="krZ-zI-5cF" secondAttribute="trailing" constant="20" id="cpi-Cb-YUr"/>
+                        <constraint firstItem="YKm-BZ-Tmb" firstAttribute="bottom" secondItem="d3i-ZH-317" secondAttribute="bottom" id="dIl-zb-cfr"/>
+                        <constraint firstItem="Wg5-R8-B0C" firstAttribute="leading" secondItem="HUx-nt-nWy" secondAttribute="leading" id="e3t-R1-Bef"/>
+                        <constraint firstItem="Yy4-hb-ZcS" firstAttribute="trailing" secondItem="oPt-dW-9dM" secondAttribute="trailing" id="f76-Wv-7Ce"/>
+                        <constraint firstItem="Wg5-R8-B0C" firstAttribute="trailing" secondItem="HUx-nt-nWy" secondAttribute="trailing" id="gLq-Eg-KIN"/>
+                        <constraint firstAttribute="bottom" secondItem="krZ-zI-5cF" secondAttribute="bottom" constant="20" id="ihJ-o5-enA"/>
+                        <constraint firstItem="YKm-BZ-Tmb" firstAttribute="trailing" secondItem="d3i-ZH-317" secondAttribute="trailing" id="lKc-YE-or8"/>
+                        <constraint firstItem="gXi-vr-xE6" firstAttribute="top" secondItem="mQp-xS-Lmm" secondAttribute="top" constant="30" id="nO7-Qm-axp"/>
+                        <constraint firstItem="Wg5-R8-B0C" firstAttribute="top" secondItem="oPt-dW-9dM" secondAttribute="bottom" constant="15" id="tlP-zO-dF7"/>
+                        <constraint firstItem="oPt-dW-9dM" firstAttribute="leading" secondItem="HUx-nt-nWy" secondAttribute="leading" id="uD2-8h-EtQ"/>
+                        <constraint firstItem="gXi-vr-xE6" firstAttribute="centerX" secondItem="mQp-xS-Lmm" secondAttribute="centerX" id="uIY-2G-Agn"/>
+                        <constraint firstItem="krZ-zI-5cF" firstAttribute="centerY" secondItem="Yy4-hb-ZcS" secondAttribute="centerY" id="ut5-1F-jZg"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Iq3-Nn-18E"/>
+            <color key="backgroundColor" red="0.043137254899999998" green="0.043137254899999998" blue="0.043137254899999998" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mQp-xS-Lmm" firstAttribute="centerY" secondItem="PYE-dB-ZgJ" secondAttribute="centerY" id="5SO-SE-7GP"/>
+                <constraint firstItem="mQp-xS-Lmm" firstAttribute="leading" secondItem="Iq3-Nn-18E" secondAttribute="leading" constant="40" id="okV-Au-AFH"/>
+                <constraint firstItem="Iq3-Nn-18E" firstAttribute="trailing" secondItem="mQp-xS-Lmm" secondAttribute="trailing" constant="40" id="unS-Fr-3NQ"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group 71529" width="92" height="92"/>
+        <image name="Icon feather-chevron-down-15" width="14.333333015441895" height="8.3333330154418945"/>
+        <image name="Icon metro-cancel" width="16" height="16"/>
+        <namedColor name="appBGColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appBaseColor">
+            <color red="0.0" green="0.35686274509803922" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appBlackColor">
+            <color red="0.043137254901960784" green="0.043137254901960784" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appLightGrayTextColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

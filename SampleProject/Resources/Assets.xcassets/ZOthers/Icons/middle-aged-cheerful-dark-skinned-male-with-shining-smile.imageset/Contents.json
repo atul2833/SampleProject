@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "middle-aged-cheerful-dark-skinned-male-with-shining-smile.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "middle-aged-cheerful-dark-skinned-male-with-shining-smile@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "middle-aged-cheerful-dark-skinned-male-with-shining-smile@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

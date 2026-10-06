@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BlockHistoryVC" customModule="TAGCredit" customModuleProvider="target">
+            <connections>
+                <outlet property="collView" destination="NYm-FX-yGd" id="6ix-Gr-pFv"/>
+                <outlet property="tblView" destination="Enr-bo-vP3" id="DXZ-aZ-5u0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Enr-bo-vP3">
+                    <rect key="frame" x="12" y="80" width="390" height="656"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="l8m-WZ-2NQ"/>
+                        <outlet property="delegate" destination="-1" id="MNr-nZ-etH"/>
+                        <outlet property="prefetchDataSource" destination="-1" id="FOB-dv-q6e"/>
+                    </connections>
+                </tableView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NYm-FX-yGd">
+                    <rect key="frame" x="12" y="30" width="390" height="40"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="rAd-iQ-7qp"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KGA-xz-Hsk">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="NYm-FX-yGd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="67m-K4-J2g"/>
+                <constraint firstItem="Enr-bo-vP3" firstAttribute="leading" secondItem="NYm-FX-yGd" secondAttribute="leading" id="6eK-gJ-eXp"/>
+                <constraint firstItem="NYm-FX-yGd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="BPg-X1-c9t"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Enr-bo-vP3" secondAttribute="bottom" id="Ltj-eX-iwW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NYm-FX-yGd" secondAttribute="trailing" constant="12" id="Tuc-k7-wu8"/>
+                <constraint firstItem="Enr-bo-vP3" firstAttribute="trailing" secondItem="NYm-FX-yGd" secondAttribute="trailing" id="ezi-LF-o2x"/>
+                <constraint firstItem="Enr-bo-vP3" firstAttribute="top" secondItem="NYm-FX-yGd" secondAttribute="bottom" constant="10" id="vsA-c4-paL"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="-11.413043478260871"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

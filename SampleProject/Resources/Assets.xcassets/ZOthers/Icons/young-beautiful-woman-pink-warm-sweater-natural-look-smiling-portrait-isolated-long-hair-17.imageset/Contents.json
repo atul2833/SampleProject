@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair-17.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair-17@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair-17@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

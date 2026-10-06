@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="351" id="KGk-i7-Jjw" customClass="ChatImageSendTblCell" customModule="TAGCreditMerchant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="351"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="485" height="351"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpc-nC-k5s">
+                        <rect key="frame" x="0.0" y="0.0" width="485" height="351"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7g-Lm-hg5">
+                                <rect key="frame" x="200" y="25.666666666666657" width="273" height="300.33333333333337"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ytr-Zg-5EG">
+                                        <rect key="frame" x="5" y="5" width="263" height="290.33333333333331"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="appLightBaseColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ytr-Zg-5EG" secondAttribute="bottom" constant="5" id="0uh-Rf-WwJ"/>
+                                    <constraint firstItem="ytr-Zg-5EG" firstAttribute="top" secondItem="v7g-Lm-hg5" secondAttribute="top" constant="5" id="Xka-tz-Hur"/>
+                                    <constraint firstItem="ytr-Zg-5EG" firstAttribute="leading" secondItem="v7g-Lm-hg5" secondAttribute="leading" constant="5" id="wnf-Qm-9IM"/>
+                                    <constraint firstAttribute="trailing" secondItem="ytr-Zg-5EG" secondAttribute="trailing" constant="5" id="wzV-e1-LPa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04:00PM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llt-rn-DkP">
+                                <rect key="frame" x="407" y="333" width="50" height="8"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="11"/>
+                                <color key="textColor" name="appGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deliveredIcon" translatesAutoresizingMaskIntoConstraints="NO" id="FXi-IB-ORe">
+                                <rect key="frame" x="461" y="331" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="FY9-XO-j9s"/>
+                                    <constraint firstAttribute="width" constant="12" id="y7d-oh-v0G"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FXi-IB-ORe" firstAttribute="trailing" secondItem="v7g-Lm-hg5" secondAttribute="trailing" id="DI7-wd-iTo"/>
+                            <constraint firstAttribute="bottom" secondItem="v7g-Lm-hg5" secondAttribute="bottom" constant="25" id="Sgq-Fd-OeC"/>
+                            <constraint firstItem="v7g-Lm-hg5" firstAttribute="top" secondItem="Lpc-nC-k5s" secondAttribute="top" constant="25.670000000000002" id="cWi-AW-nJ9"/>
+                            <constraint firstAttribute="trailing" secondItem="v7g-Lm-hg5" secondAttribute="trailing" constant="12" id="fnF-Qv-YI2"/>
+                            <constraint firstItem="v7g-Lm-hg5" firstAttribute="leading" secondItem="Lpc-nC-k5s" secondAttribute="leading" constant="200" id="oKL-Ov-zxV"/>
+                            <constraint firstItem="FXi-IB-ORe" firstAttribute="top" secondItem="v7g-Lm-hg5" secondAttribute="bottom" constant="5" id="riG-KC-2sS"/>
+                            <constraint firstItem="FXi-IB-ORe" firstAttribute="centerY" secondItem="llt-rn-DkP" secondAttribute="centerY" id="x1e-Yo-atZ"/>
+                            <constraint firstAttribute="bottom" secondItem="llt-rn-DkP" secondAttribute="bottom" constant="10" id="xC7-FN-kFv"/>
+                            <constraint firstItem="FXi-IB-ORe" firstAttribute="leading" secondItem="llt-rn-DkP" secondAttribute="trailing" constant="4" id="yFb-Ee-flm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lpc-nC-k5s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4H2-3b-YD0"/>
+                    <constraint firstItem="Lpc-nC-k5s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cb0-jJ-AZ8"/>
+                    <constraint firstAttribute="trailing" secondItem="Lpc-nC-k5s" secondAttribute="trailing" id="mNM-N4-hPh"/>
+                    <constraint firstAttribute="bottom" secondItem="Lpc-nC-k5s" secondAttribute="bottom" id="rVh-Nk-g8R"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backView" destination="v7g-Lm-hg5" id="10B-5F-0Cb"/>
+                <outlet property="imgView" destination="ytr-Zg-5EG" id="82H-T1-RFy"/>
+                <outlet property="timeLbl" destination="llt-rn-DkP" id="UDq-IM-Caa"/>
+            </connections>
+            <point key="canvasLocation" x="255.72519083969465" y="96.83098591549296"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="deliveredIcon" width="12.333333015441895" height="7.3333334922790527"/>
+        <namedColor name="appGrayColor">
+            <color red="0.44705882352941179" green="0.44705882352941179" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appLightBaseColor">
+            <color red="0.93725490196078431" green="0.97254901960784312" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

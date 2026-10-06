@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetSecurityVC" customModule="TAGCredit" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="5tR-yt-jVy" id="GJM-OY-J5k"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="5tR-yt-jVy">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_security" translatesAutoresizingMaskIntoConstraints="NO" id="gye-eb-bFi">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Security" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNr-b0-ibE">
+                    <rect key="frame" x="12" y="438" width="351" height="24.5"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                    <color key="textColor" name="appBaseColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you want to enable existing device security?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWn-wf-wlH">
+                    <rect key="frame" x="12" y="482.5" width="351" height="19.5"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                    <color key="textColor" name="appLightGrayTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfi-eg-QKr" customClass="ResponsiveButton" customModule="TAGCredit" customModuleProvider="target">
+                    <rect key="frame" x="12" y="542" width="165.5" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="BNB-Pa-XL3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                    <state key="normal" title="No">
+                        <color key="titleColor" name="appBlackColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="appLightGrayTextColor"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="continueAction:" destination="-1" eventType="touchUpInside" id="UtF-jk-cO9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPS-u5-AuA" customClass="ResponsiveButton" customModule="TAGCredit" customModuleProvider="target">
+                    <rect key="frame" x="197.5" y="542" width="165.5" height="45"/>
+                    <color key="backgroundColor" name="appBaseColor"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                    <state key="normal" title="Yes">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="continueAction:" destination="-1" eventType="touchUpInside" id="bm1-2L-WVD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="KLA-eB-vGu"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KLA-eB-vGu" firstAttribute="bottom" secondItem="yfi-eg-QKr" secondAttribute="bottom" constant="80" id="5OY-Kl-5nf"/>
+                <constraint firstItem="nPS-u5-AuA" firstAttribute="height" secondItem="yfi-eg-QKr" secondAttribute="height" id="5bd-TH-r3m"/>
+                <constraint firstItem="LWn-wf-wlH" firstAttribute="top" secondItem="MNr-b0-ibE" secondAttribute="bottom" constant="20" id="6K5-m5-Brz"/>
+                <constraint firstItem="gye-eb-bFi" firstAttribute="top" secondItem="5tR-yt-jVy" secondAttribute="top" id="7Wu-EV-JYi"/>
+                <constraint firstItem="yfi-eg-QKr" firstAttribute="leading" secondItem="LWn-wf-wlH" secondAttribute="leading" id="JZW-c3-bFG"/>
+                <constraint firstItem="gye-eb-bFi" firstAttribute="leading" secondItem="KLA-eB-vGu" secondAttribute="leading" id="RTN-fc-vOf"/>
+                <constraint firstItem="gye-eb-bFi" firstAttribute="height" secondItem="5tR-yt-jVy" secondAttribute="height" multiplier="0.6" id="STu-MZ-Vl6"/>
+                <constraint firstItem="LWn-wf-wlH" firstAttribute="trailing" secondItem="MNr-b0-ibE" secondAttribute="trailing" id="Zyl-Zg-0R6"/>
+                <constraint firstItem="yfi-eg-QKr" firstAttribute="centerY" secondItem="nPS-u5-AuA" secondAttribute="centerY" id="gW7-ew-FFD"/>
+                <constraint firstItem="KLA-eB-vGu" firstAttribute="trailing" secondItem="gye-eb-bFi" secondAttribute="trailing" id="h6j-Vg-dGS"/>
+                <constraint firstItem="LWn-wf-wlH" firstAttribute="leading" secondItem="MNr-b0-ibE" secondAttribute="leading" id="kpr-Bw-JC5"/>
+                <constraint firstItem="nPS-u5-AuA" firstAttribute="leading" secondItem="yfi-eg-QKr" secondAttribute="trailing" constant="20" id="q0n-Iy-5qn"/>
+                <constraint firstItem="yfi-eg-QKr" firstAttribute="top" secondItem="LWn-wf-wlH" secondAttribute="bottom" constant="40" id="qaL-l1-b92"/>
+                <constraint firstItem="nPS-u5-AuA" firstAttribute="width" secondItem="yfi-eg-QKr" secondAttribute="width" id="rKq-K0-0g1"/>
+                <constraint firstItem="MNr-b0-ibE" firstAttribute="trailing" secondItem="gye-eb-bFi" secondAttribute="trailing" constant="-12" id="uBR-W8-XoY"/>
+                <constraint firstItem="MNr-b0-ibE" firstAttribute="leading" secondItem="gye-eb-bFi" secondAttribute="leading" constant="12" id="wZX-gf-obh"/>
+                <constraint firstItem="nPS-u5-AuA" firstAttribute="trailing" secondItem="LWn-wf-wlH" secondAttribute="trailing" id="x5G-Mf-f6P"/>
+            </constraints>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_security" width="393" height="520"/>
+        <namedColor name="appBaseColor">
+            <color red="0.0" green="0.35686274509803922" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appBlackColor">
+            <color red="0.043137254901960784" green="0.043137254901960784" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appLightGrayTextColor">
+            <color red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FBDD88C2-AE31-4376-BD8C-BDA80585DB66"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            uuid = "3E075702-2942-4E36-A87E-6AAF054F5903"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            breakpointStackSelectionBehavior = "1"
+            scope = "1"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
+         <BreakpointContent
+            uuid = "A0FF6C72-3BD4-47D2-A142-A0D4B04CBC6D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = ""
+            moduleName = "">
+            <Locations>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D417FFED-63ED-4A37-96DF-FC267F8D7EDA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComeraPay/Modules/MainApp/HomeTabbar/HomeModule/EnterAmountModule/Controller/EnterAmountViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "handlePaymentWithLean(model:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D417FFED-63ED-4A37-96DF-FC267F8D7EDA - c4232e41a400b688"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComeraPay.EnterAmountViewController.handlePaymentWithLean(model: ComeraPay.RegisterCustomerModel) -&gt; ()"
+                  moduleName = "ComeraPay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zuhaib.imtiaz/Desktop/Projects/ComeraPay/ComeraPay/Modules/MainApp/HomeTabbar/HomeModule/EnterAmountModule/Controller/EnterAmountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "D417FFED-63ED-4A37-96DF-FC267F8D7EDA - c4232e41a400b6d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComeraPay.EnterAmountViewController.handlePaymentWithLean(model: ComeraPay.RegisterCustomerModel) -&gt; ()"
+                  moduleName = "ComeraPay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zuhaib.imtiaz/Desktop/Projects/ComeraPay/ComeraPay/Modules/MainApp/HomeTabbar/HomeModule/EnterAmountModule/Controller/EnterAmountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "176">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD375DF8-0BC9-4921-ADE0-032FF7EECF9D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ComeraPay/Modules/MainApp/HomeTabbar/HomeModule/EnterAmountModule/Controller/EnterAmountViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "handlePaymentWithLean(model:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CD375DF8-0BC9-4921-ADE0-032FF7EECF9D - c4232e41a400b72b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComeraPay.EnterAmountViewController.handlePaymentWithLean(model: ComeraPay.RegisterCustomerModel) -&gt; ()"
+                  moduleName = "ComeraPay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zuhaib.imtiaz/Desktop/Projects/ComeraPay/ComeraPay/Modules/MainApp/HomeTabbar/HomeModule/EnterAmountModule/Controller/EnterAmountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "97"
+                  endingLineNumber = "97"
+                  offsetFromSymbolStart = "336">
+               </Location>
+               <Location
+                  uuid = "CD375DF8-0BC9-4921-ADE0-032FF7EECF9D - c4232e41a400b74a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ComeraPay.EnterAmountViewController.handlePaymentWithLean(model: ComeraPay.RegisterCustomerModel) -&gt; ()"
+                  moduleName = "ComeraPay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zuhaib.imtiaz/Desktop/Projects/ComeraPay/ComeraPay/Modules/MainApp/HomeTabbar/HomeModule/EnterAmountModule/Controller/EnterAmountViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "336">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

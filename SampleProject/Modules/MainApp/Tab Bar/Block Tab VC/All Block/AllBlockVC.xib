@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllBlockVC" customModule="TAGCredit" customModuleProvider="target">
+            <connections>
+                <outlet property="blockTblView" destination="VRE-xt-LD1" id="bme-E8-fGX"/>
+                <outlet property="searchBar" destination="6LU-Yv-Euo" id="9zZ-bY-1Fk"/>
+                <outlet property="segmentControl" destination="KST-Ig-Yxf" id="doQ-7c-vAA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VRE-xt-LD1">
+                    <rect key="frame" x="18" y="233" width="357" height="551"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3nh-mX-gOI"/>
+                        <outlet property="delegate" destination="-1" id="kdq-n9-Fkt"/>
+                        <outlet property="prefetchDataSource" destination="-1" id="gRt-0Z-qoj"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Search…" translatesAutoresizingMaskIntoConstraints="NO" id="6LU-Yv-Euo">
+                    <rect key="frame" x="10" y="128" width="373" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="1t2-rR-3qq"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="appGrayColor"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </searchBar>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KST-Ig-Yxf">
+                    <rect key="frame" x="18" y="178" width="357" height="46"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="0ee-pt-OcE"/>
+                    </constraints>
+                    <segments>
+                        <segment title="All"/>
+                        <segment title="Swap"/>
+                    </segments>
+                    <color key="tintColor" name="appPinkColor"/>
+                </segmentedControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="KST-Ig-Yxf" firstAttribute="trailing" secondItem="VRE-xt-LD1" secondAttribute="trailing" id="6Hq-d7-t0r"/>
+                <constraint firstItem="KST-Ig-Yxf" firstAttribute="leading" secondItem="VRE-xt-LD1" secondAttribute="leading" id="EZx-gW-iwx"/>
+                <constraint firstItem="6LU-Yv-Euo" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-10" id="IJq-Qe-orS"/>
+                <constraint firstItem="6LU-Yv-Euo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="MT3-Wx-18e"/>
+                <constraint firstItem="VRE-xt-LD1" firstAttribute="top" secondItem="KST-Ig-Yxf" secondAttribute="bottom" constant="10" id="Xs3-6h-wYc"/>
+                <constraint firstItem="VRE-xt-LD1" firstAttribute="leading" secondItem="6LU-Yv-Euo" secondAttribute="leading" constant="8" id="eS9-iF-whk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VRE-xt-LD1" secondAttribute="bottom" id="eXZ-F3-N2h"/>
+                <constraint firstItem="KST-Ig-Yxf" firstAttribute="top" secondItem="6LU-Yv-Euo" secondAttribute="bottom" constant="5" id="fLI-Tw-NEa"/>
+                <constraint firstItem="VRE-xt-LD1" firstAttribute="trailing" secondItem="6LU-Yv-Euo" secondAttribute="trailing" constant="-8" id="v4s-pl-HQr"/>
+                <constraint firstItem="6LU-Yv-Euo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="x6P-0P-Nip"/>
+            </constraints>
+            <point key="canvasLocation" x="35.877862595419849" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="appGrayColor">
+            <color red="0.44705882352941179" green="0.44705882352941179" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appPinkColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

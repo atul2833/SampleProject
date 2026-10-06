@@ -1,0 +1,20 @@
+PODS:
+  - DropDown (2.3.13)
+  - Starscream (4.0.4)
+
+DEPENDENCIES:
+  - DropDown
+  - Starscream
+
+SPEC REPOS:
+  trunk:
+    - DropDown
+    - Starscream
+
+SPEC CHECKSUMS:
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+
+PODFILE CHECKSUM: c4f3164ba66da0660274523130f0c9ea10f9b931
+
+COCOAPODS: 1.16.2

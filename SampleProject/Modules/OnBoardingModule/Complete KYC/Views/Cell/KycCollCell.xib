@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="KycCollCell" customModule="TAGCredit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="271" height="218"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="271" height="218"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPC-bZ-DfP">
+                        <rect key="frame" x="0.0" y="0.0" width="271" height="218"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image=" " translatesAutoresizingMaskIntoConstraints="NO" id="44K-Lf-kzQ">
+                                <rect key="frame" x="0.0" y="0.0" width="271" height="218"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_x31_1_Pasport" translatesAutoresizingMaskIntoConstraints="NO" id="jTs-U7-8ht">
+                                <rect key="frame" x="117.66666666666669" y="96" width="36" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="8aH-r2-8RO"/>
+                                    <constraint firstAttribute="height" constant="26" id="zyB-K5-TzO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Front view" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksn-Pc-wXH">
+                                <rect key="frame" x="75" y="138" width="121" height="16"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                <color key="textColor" name="appLightBlackColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dD1-fq-Xe0">
+                                <rect key="frame" x="0.0" y="0.0" width="271" height="218"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" "/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="appLightImageViewColor"/>
+                        <constraints>
+                            <constraint firstItem="ksn-Pc-wXH" firstAttribute="top" secondItem="jTs-U7-8ht" secondAttribute="bottom" constant="16" id="0Vi-f7-l12"/>
+                            <constraint firstAttribute="trailing" secondItem="44K-Lf-kzQ" secondAttribute="trailing" id="3Qw-zr-32e"/>
+                            <constraint firstAttribute="bottom" secondItem="dD1-fq-Xe0" secondAttribute="bottom" id="4F0-3k-5mG"/>
+                            <constraint firstItem="jTs-U7-8ht" firstAttribute="centerX" secondItem="OPC-bZ-DfP" secondAttribute="centerX" id="8Ug-V5-zL0"/>
+                            <constraint firstItem="44K-Lf-kzQ" firstAttribute="top" secondItem="OPC-bZ-DfP" secondAttribute="top" id="9HD-11-0R1"/>
+                            <constraint firstAttribute="trailing" secondItem="dD1-fq-Xe0" secondAttribute="trailing" id="Bvr-fa-eXa"/>
+                            <constraint firstAttribute="bottom" secondItem="44K-Lf-kzQ" secondAttribute="bottom" id="JNw-8L-FLs"/>
+                            <constraint firstItem="dD1-fq-Xe0" firstAttribute="leading" secondItem="OPC-bZ-DfP" secondAttribute="leading" id="LSd-6v-k3i"/>
+                            <constraint firstItem="jTs-U7-8ht" firstAttribute="centerY" secondItem="OPC-bZ-DfP" secondAttribute="centerY" id="PWl-WV-Q6u"/>
+                            <constraint firstItem="dD1-fq-Xe0" firstAttribute="top" secondItem="OPC-bZ-DfP" secondAttribute="top" id="Qxa-Gl-S6y"/>
+                            <constraint firstItem="44K-Lf-kzQ" firstAttribute="leading" secondItem="OPC-bZ-DfP" secondAttribute="leading" id="qup-4X-fhh"/>
+                            <constraint firstItem="ksn-Pc-wXH" firstAttribute="centerX" secondItem="jTs-U7-8ht" secondAttribute="centerX" id="sq6-TM-utW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="OPC-bZ-DfP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9cG-f5-KlH"/>
+                <constraint firstItem="OPC-bZ-DfP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Cjd-8x-vQU"/>
+                <constraint firstAttribute="bottom" secondItem="OPC-bZ-DfP" secondAttribute="bottom" id="Wgi-Rj-dJ3"/>
+                <constraint firstAttribute="trailing" secondItem="OPC-bZ-DfP" secondAttribute="trailing" id="kFy-MJ-Fbc"/>
+            </constraints>
+            <size key="customSize" width="271" height="218"/>
+            <connections>
+                <outlet property="btnUpload" destination="dD1-fq-Xe0" id="0qB-oP-287"/>
+                <outlet property="imgLogo" destination="jTs-U7-8ht" id="plh-PF-SgW"/>
+                <outlet property="imgMain" destination="44K-Lf-kzQ" id="sQC-5X-R4i"/>
+                <outlet property="lblInfo" destination="ksn-Pc-wXH" id="efx-hU-sGi"/>
+            </connections>
+            <point key="canvasLocation" x="16.030534351145036" y="79.577464788732399"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name=" " width="128" height="128"/>
+        <image name="_x31_1_Pasport" width="36" height="26.333333969116211"/>
+        <namedColor name="appLightBlackColor">
+            <color red="0.30588235294117649" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appLightImageViewColor">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

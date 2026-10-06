@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Medium.otf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="388" id="KGk-i7-Jjw" customClass="RentalPropertiesTableCell" customModule="TAGCreditMerchant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="388"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="392" height="388"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4z-tt-z0C">
+                        <rect key="frame" x="0.0" y="0.0" width="392" height="388"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Trx-xh-jkF">
+                                <rect key="frame" x="12" y="10" width="368" height="186"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="186" id="43x-6K-bER"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Malibu Beach House" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXF-Pd-oZU">
+                                <rect key="frame" x="12" y="208" width="368" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consetetur." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1q-ZK-nfa">
+                                <rect key="frame" x="12" y="234" width="368" height="16"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="13"/>
+                                <color key="textColor" name="appGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Et-Ge-ytE">
+                                <rect key="frame" x="258.66666666666669" y="22" width="110" height="28"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1300 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J5g-AO-Akx">
+                                        <rect key="frame" x="10" y="7" width="39.333333333333336" height="14"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="12"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/monthly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvA-XU-4Ft">
+                                        <rect key="frame" x="49.333333333333314" y="7.6666666666666679" width="50.666666666666657" height="13"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="11"/>
+                                        <color key="textColor" name="appGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="J5g-AO-Akx" firstAttribute="centerY" secondItem="4Et-Ge-ytE" secondAttribute="centerY" id="2MR-Rl-8sR"/>
+                                    <constraint firstItem="J5g-AO-Akx" firstAttribute="leading" secondItem="4Et-Ge-ytE" secondAttribute="leading" constant="10" id="7Pb-dJ-qdW"/>
+                                    <constraint firstAttribute="height" constant="28" id="BhG-1q-g3u"/>
+                                    <constraint firstItem="LvA-XU-4Ft" firstAttribute="centerY" secondItem="J5g-AO-Akx" secondAttribute="centerY" id="aI2-CX-M0N"/>
+                                    <constraint firstItem="LvA-XU-4Ft" firstAttribute="leading" secondItem="J5g-AO-Akx" secondAttribute="trailing" id="jFJ-qb-ojc"/>
+                                    <constraint firstAttribute="trailing" secondItem="LvA-XU-4Ft" secondAttribute="trailing" constant="10" id="jFb-yz-Yx1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Et-Ge-ytE" firstAttribute="centerX" secondItem="Trx-xh-jkF" secondAttribute="centerX" multiplier="1.6" id="33e-nQ-TWh"/>
+                            <constraint firstItem="Trx-xh-jkF" firstAttribute="top" secondItem="n4z-tt-z0C" secondAttribute="top" constant="10" id="Qk6-t9-tbO"/>
+                            <constraint firstItem="h1q-ZK-nfa" firstAttribute="top" secondItem="kXF-Pd-oZU" secondAttribute="bottom" constant="5" id="S92-rm-DtX"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="h1q-ZK-nfa" secondAttribute="bottom" constant="20" id="Xjc-NO-AfY"/>
+                            <constraint firstItem="kXF-Pd-oZU" firstAttribute="top" secondItem="Trx-xh-jkF" secondAttribute="bottom" constant="12" id="Y5x-5a-Yad"/>
+                            <constraint firstItem="h1q-ZK-nfa" firstAttribute="trailing" secondItem="kXF-Pd-oZU" secondAttribute="trailing" id="YWc-4e-7IS"/>
+                            <constraint firstItem="h1q-ZK-nfa" firstAttribute="leading" secondItem="kXF-Pd-oZU" secondAttribute="leading" id="ZPz-Uy-Hla"/>
+                            <constraint firstItem="kXF-Pd-oZU" firstAttribute="trailing" secondItem="Trx-xh-jkF" secondAttribute="trailing" id="afx-hM-wEj"/>
+                            <constraint firstItem="Trx-xh-jkF" firstAttribute="leading" secondItem="n4z-tt-z0C" secondAttribute="leading" constant="12" id="dyj-oU-iRH"/>
+                            <constraint firstAttribute="trailing" secondItem="Trx-xh-jkF" secondAttribute="trailing" constant="12" id="hUA-UP-Hfx"/>
+                            <constraint firstItem="kXF-Pd-oZU" firstAttribute="leading" secondItem="Trx-xh-jkF" secondAttribute="leading" id="oc5-vm-NTZ"/>
+                            <constraint firstItem="4Et-Ge-ytE" firstAttribute="centerY" secondItem="Trx-xh-jkF" secondAttribute="centerY" multiplier="0.35" id="xPE-w2-wAu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="n4z-tt-z0C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="L1w-nd-lXg"/>
+                    <constraint firstItem="n4z-tt-z0C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PkI-1A-Ti7"/>
+                    <constraint firstAttribute="bottom" secondItem="n4z-tt-z0C" secondAttribute="bottom" id="TKr-dO-uRZ"/>
+                    <constraint firstAttribute="trailing" secondItem="n4z-tt-z0C" secondAttribute="trailing" id="YMx-rL-5jV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="Trx-xh-jkF" id="iHY-8p-B4Y"/>
+                <outlet property="lblDescription" destination="h1q-ZK-nfa" id="G6u-Dd-1Gs"/>
+                <outlet property="lblDuration" destination="LvA-XU-4Ft" id="bQl-Hn-KIf"/>
+                <outlet property="lblPrice" destination="J5g-AO-Akx" id="26u-mO-hyF"/>
+                <outlet property="lblTitle" destination="kXF-Pd-oZU" id="SGA-T7-mVD"/>
+            </connections>
+            <point key="canvasLocation" x="237" y="-185"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="appGrayColor">
+            <color red="0.44705882352941179" green="0.44705882352941179" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

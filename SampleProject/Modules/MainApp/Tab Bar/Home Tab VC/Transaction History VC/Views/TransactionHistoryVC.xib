@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransactionHistoryVC" customModule="TAGCredit" customModuleProvider="target">
+            <connections>
+                <outlet property="srchBar" destination="B01-4P-sGb" id="YIh-ma-PL2"/>
+                <outlet property="tblView" destination="XVN-lb-DcV" id="xgL-Xu-p9K"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="XVN-lb-DcV">
+                    <rect key="frame" x="10" y="64" width="355" height="603"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ySs-fN-1WI"/>
+                        <outlet property="delegate" destination="-1" id="hDS-jY-gdg"/>
+                    </connections>
+                </tableView>
+                <searchBar hidden="YES" contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Search.." translatesAutoresizingMaskIntoConstraints="NO" id="B01-4P-sGb">
+                    <rect key="frame" x="0.0" y="30" width="375" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="EMa-gP-hVM"/>
+                    </connections>
+                </searchBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL TRANSACTIONS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6x-nC-wzS">
+                    <rect key="frame" x="10" y="40" width="145" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="145" id="5MX-gU-P30"/>
+                        <constraint firstAttribute="height" constant="14" id="A2s-7L-DCl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                    <color key="textColor" name="appGrayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APt-xk-6NB">
+                    <rect key="frame" x="160" y="47" width="205" height="0.5"/>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Ozh-s2-UsE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="XVN-lb-DcV" firstAttribute="leading" secondItem="m6x-nC-wzS" secondAttribute="leading" id="0Ng-D2-3aE"/>
+                <constraint firstItem="XVN-lb-DcV" firstAttribute="trailing" secondItem="APt-xk-6NB" secondAttribute="trailing" id="0OT-nN-Utf"/>
+                <constraint firstItem="B01-4P-sGb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="8XK-p5-dJd"/>
+                <constraint firstItem="APt-xk-6NB" firstAttribute="centerY" secondItem="m6x-nC-wzS" secondAttribute="centerY" id="Cwd-ol-15m"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="XVN-lb-DcV" secondAttribute="bottom" id="IU3-bY-UkR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XVN-lb-DcV" secondAttribute="trailing" constant="10" id="L6I-aQ-qQL"/>
+                <constraint firstItem="m6x-nC-wzS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="LGY-36-7b7"/>
+                <constraint firstAttribute="trailing" secondItem="APt-xk-6NB" secondAttribute="trailing" constant="10" id="OOK-9M-ynA"/>
+                <constraint firstItem="B01-4P-sGb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Rk6-sN-Vgq"/>
+                <constraint firstItem="XVN-lb-DcV" firstAttribute="top" secondItem="m6x-nC-wzS" secondAttribute="bottom" constant="10" id="SJX-fa-o37"/>
+                <constraint firstItem="m6x-nC-wzS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="Viv-ff-PfW"/>
+                <constraint firstItem="B01-4P-sGb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="rSQ-5o-eVc"/>
+                <constraint firstItem="APt-xk-6NB" firstAttribute="leading" secondItem="m6x-nC-wzS" secondAttribute="trailing" constant="5" id="saV-Wt-EQk"/>
+                <constraint firstItem="XVN-lb-DcV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="xrB-su-bSc"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="100.29985007496252"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="appGrayColor">
+            <color red="0.44705882352941179" green="0.44705882352941179" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

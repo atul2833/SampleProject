@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompleteProfileVC" customModule="TAGCredit" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSkip" destination="AdH-1g-gx7" id="d5B-O9-wdw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="0F1-1I-ytq">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nsr-z2-7ZQ">
+                    <rect key="frame" x="12" y="173" width="390" height="250"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify Your Identity" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgR-RB-iD2">
+                            <rect key="frame" x="12" y="157.33333333333331" width="366" height="23.333333333333343"/>
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="19"/>
+                            <color key="textColor" name="appBlackColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E17-SQ-lu6">
+                            <rect key="frame" x="12" y="195.66666666666669" width="366" height="34.333333333333343"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                            <color key="textColor" name="appLightGrayTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_complete_profile" translatesAutoresizingMaskIntoConstraints="NO" id="9CS-Zh-oMh">
+                            <rect key="frame" x="160" y="30.999999999999993" width="70" height="96.333333333333314"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="wgR-RB-iD2" firstAttribute="leading" secondItem="Nsr-z2-7ZQ" secondAttribute="leading" constant="12" id="3ss-3j-jJY"/>
+                        <constraint firstItem="E17-SQ-lu6" firstAttribute="leading" secondItem="wgR-RB-iD2" secondAttribute="leading" id="6sl-SZ-kKW"/>
+                        <constraint firstItem="wgR-RB-iD2" firstAttribute="top" secondItem="9CS-Zh-oMh" secondAttribute="bottom" constant="30" id="8DS-Q4-FI4"/>
+                        <constraint firstAttribute="bottom" secondItem="E17-SQ-lu6" secondAttribute="bottom" constant="20" id="Dy0-mJ-Voq"/>
+                        <constraint firstAttribute="trailing" secondItem="wgR-RB-iD2" secondAttribute="trailing" constant="12" id="FLA-sD-696"/>
+                        <constraint firstItem="E17-SQ-lu6" firstAttribute="top" secondItem="wgR-RB-iD2" secondAttribute="bottom" constant="15" id="jMR-xT-ipI"/>
+                        <constraint firstItem="E17-SQ-lu6" firstAttribute="trailing" secondItem="wgR-RB-iD2" secondAttribute="trailing" id="jrU-sN-NBZ"/>
+                        <constraint firstItem="9CS-Zh-oMh" firstAttribute="centerX" secondItem="Nsr-z2-7ZQ" secondAttribute="centerX" id="ppF-tj-qbB"/>
+                        <constraint firstAttribute="height" constant="250" id="uSn-HA-lFh"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KsS-iR-X0V">
+                    <rect key="frame" x="12" y="498" width="390" height="45"/>
+                    <color key="backgroundColor" name="appBaseColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="9XY-Vj-9cy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="17"/>
+                    <state key="normal" title="Scan ID">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="scanBtnAction:" destination="-1" eventType="touchUpInside" id="wsk-ya-Y11"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AdH-1g-gx7" customClass="ResponsiveButton" customModule="TAGCredit" customModuleProvider="target">
+                    <rect key="frame" x="12" y="555" width="390" height="45"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                    <state key="normal" title="Skip for now">
+                        <color key="titleColor" name="appGrayColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="skipBtnAction:" destination="-1" eventType="touchUpInside" id="2XC-As-9VU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="KsS-iR-X0V" firstAttribute="trailing" secondItem="Nsr-z2-7ZQ" secondAttribute="trailing" id="6KB-Pj-QUq"/>
+                <constraint firstItem="0F1-1I-ytq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="937-Uq-5Y2"/>
+                <constraint firstItem="AdH-1g-gx7" firstAttribute="trailing" secondItem="KsS-iR-X0V" secondAttribute="trailing" id="Atn-gR-6jN"/>
+                <constraint firstItem="KsS-iR-X0V" firstAttribute="leading" secondItem="Nsr-z2-7ZQ" secondAttribute="leading" id="KsU-lt-0we"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0F1-1I-ytq" secondAttribute="trailing" id="LRA-V9-Wcy"/>
+                <constraint firstItem="Nsr-z2-7ZQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="UNc-jq-96S"/>
+                <constraint firstItem="AdH-1g-gx7" firstAttribute="height" secondItem="KsS-iR-X0V" secondAttribute="height" id="WWM-En-eu6"/>
+                <constraint firstItem="AdH-1g-gx7" firstAttribute="leading" secondItem="KsS-iR-X0V" secondAttribute="leading" id="Y5n-W7-cdu"/>
+                <constraint firstItem="0F1-1I-ytq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Yb8-H0-opF"/>
+                <constraint firstAttribute="bottom" secondItem="0F1-1I-ytq" secondAttribute="bottom" id="dsh-Eg-FlR"/>
+                <constraint firstItem="KsS-iR-X0V" firstAttribute="top" secondItem="Nsr-z2-7ZQ" secondAttribute="bottom" constant="75" id="i3L-MW-QAD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Nsr-z2-7ZQ" secondAttribute="trailing" constant="12" id="iul-Ca-fTz"/>
+                <constraint firstItem="AdH-1g-gx7" firstAttribute="top" secondItem="KsS-iR-X0V" secondAttribute="bottom" constant="12" id="pvY-Ie-M72"/>
+                <constraint firstItem="Nsr-z2-7ZQ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-70" id="wgY-ck-d3O"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="-11.413043478260871"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Background" width="131" height="284"/>
+        <image name="icon_complete_profile" width="70" height="96.333335876464844"/>
+        <namedColor name="appBaseColor">
+            <color red="0.0" green="0.35686274509803922" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appBlackColor">
+            <color red="0.043137254901960784" green="0.043137254901960784" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appGrayColor">
+            <color red="0.44705882352941179" green="0.44705882352941179" blue="0.44705882352941179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appLightGrayTextColor">
+            <color red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

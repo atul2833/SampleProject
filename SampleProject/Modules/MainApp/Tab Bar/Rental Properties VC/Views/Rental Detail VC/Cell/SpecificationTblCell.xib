@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SpecificationTblCell" customModule="TAGCreditMerchant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5K-lq-cs4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="3 Month Advance Rent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diy-pt-y7s">
+                                <rect key="frame" x="30" y="14" width="290" height="16"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                <color key="textColor" name="appBlackColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grK-p9-RAr">
+                                <rect key="frame" x="5" y="10.333333333333334" width="20" height="23.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="4YD-64-MdM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="19"/>
+                                <color key="textColor" name="appBlackColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="diy-pt-y7s" firstAttribute="centerY" secondItem="grK-p9-RAr" secondAttribute="centerY" id="1Wu-zE-SQS"/>
+                            <constraint firstItem="grK-p9-RAr" firstAttribute="leading" secondItem="l5K-lq-cs4" secondAttribute="leading" constant="5" id="WcV-j2-2cs"/>
+                            <constraint firstItem="diy-pt-y7s" firstAttribute="leading" secondItem="grK-p9-RAr" secondAttribute="trailing" constant="5" id="aFC-Yp-MYV"/>
+                            <constraint firstAttribute="trailing" secondItem="diy-pt-y7s" secondAttribute="trailing" id="fCn-x2-gPl"/>
+                            <constraint firstItem="grK-p9-RAr" firstAttribute="centerY" secondItem="l5K-lq-cs4" secondAttribute="centerY" id="xyB-5y-1M4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="l5K-lq-cs4" secondAttribute="trailing" id="37J-Ge-4Vi"/>
+                    <constraint firstAttribute="bottom" secondItem="l5K-lq-cs4" secondAttribute="bottom" id="4fa-gB-rhI"/>
+                    <constraint firstItem="l5K-lq-cs4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ica-Hp-YAh"/>
+                    <constraint firstItem="l5K-lq-cs4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sqp-Oy-6tD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblTitle" destination="diy-pt-y7s" id="x2f-N6-GAV"/>
+            </connections>
+            <point key="canvasLocation" x="101" y="-11"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="appBlackColor">
+            <color red="0.043137254901960784" green="0.043137254901960784" blue="0.043137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

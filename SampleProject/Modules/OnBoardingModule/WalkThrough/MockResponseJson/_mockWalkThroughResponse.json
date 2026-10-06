@@ -1,0 +1,28 @@
+{
+    "status": "success",
+    "message": "Walkthrough Details",
+    "data": [
+        {
+            "sNo": 0,
+            "id": 1,
+            "image": "Mask Group 36",
+            "title": "“Join Our Blocks”",
+            "description": "“Join millions who are already experiencing the future of digital finance.”"
+        },
+        {
+            "sNo": 1,
+            "id": 2,
+            "image": "Mask Group 35",
+            "title": "“Financial Contributions”",
+            "description": "“No more carrying cash or cards – your phone is now your wallet!”"
+        },
+        {
+            "sNo": 2,
+            "id": 3,
+            "image": "Mask Group 37",
+            "title": "“Secure Transcations”",
+            "description": "“Send money to friends and family with just a tap.”"
+        }
+    ]
+}
+

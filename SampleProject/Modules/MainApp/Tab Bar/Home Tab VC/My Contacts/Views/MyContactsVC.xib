@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyContactsVC" customModule="TAGCredit" customModuleProvider="target">
+            <connections>
+                <outlet property="srchBar" destination="fpv-CU-zot" id="blD-08-aeg"/>
+                <outlet property="tblView" destination="CMe-S5-GWO" id="ADf-tP-aNU"/>
+                <outlet property="view" destination="ql4-UI-c2p" id="CEl-EZ-1s9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ql4-UI-c2p">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="CMe-S5-GWO">
+                    <rect key="frame" x="10" y="174.66666666666669" width="373" height="574.33333333333326"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="separatorColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Zlb-Em-DUu"/>
+                        <outlet property="delegate" destination="-1" id="ngj-At-u2g"/>
+                        <outlet property="prefetchDataSource" destination="-1" id="sVW-Ht-WTq"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Search…" translatesAutoresizingMaskIntoConstraints="NO" id="fpv-CU-zot">
+                    <rect key="frame" x="0.0" y="69" width="393" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="6BK-e4-n8S"/>
+                    </connections>
+                </searchBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ye9-r7-4fT">
+                    <rect key="frame" x="10" y="145" width="89" height="19.666666666666657"/>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZ4-8X-ffb">
+                    <rect key="frame" x="10" y="761" width="373" height="45"/>
+                    <color key="backgroundColor" name="appBaseColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Le2-yL-8Jq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                    <state key="normal" title="Invite Friends">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="inviteBtnAction:" destination="-1" eventType="touchUpInside" id="Jf0-q2-NP9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="7Wo-S4-TZZ"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7Wo-S4-TZZ" firstAttribute="bottom" secondItem="YZ4-8X-ffb" secondAttribute="bottom" constant="12" id="23J-py-S29"/>
+                <constraint firstItem="CMe-S5-GWO" firstAttribute="top" secondItem="Ye9-r7-4fT" secondAttribute="bottom" constant="10" id="34A-Md-ydu"/>
+                <constraint firstItem="YZ4-8X-ffb" firstAttribute="leading" secondItem="CMe-S5-GWO" secondAttribute="leading" id="3VY-Js-aVB"/>
+                <constraint firstItem="Ye9-r7-4fT" firstAttribute="leading" secondItem="CMe-S5-GWO" secondAttribute="leading" id="4PM-P8-jE2"/>
+                <constraint firstItem="7Wo-S4-TZZ" firstAttribute="trailing" secondItem="CMe-S5-GWO" secondAttribute="trailing" constant="10" id="8vz-yL-MZ4"/>
+                <constraint firstItem="fpv-CU-zot" firstAttribute="leading" secondItem="7Wo-S4-TZZ" secondAttribute="leading" id="DTo-bB-pS8"/>
+                <constraint firstItem="YZ4-8X-ffb" firstAttribute="trailing" secondItem="CMe-S5-GWO" secondAttribute="trailing" id="VKM-gi-sxM"/>
+                <constraint firstItem="fpv-CU-zot" firstAttribute="trailing" secondItem="7Wo-S4-TZZ" secondAttribute="trailing" id="aCf-CW-P09"/>
+                <constraint firstItem="Ye9-r7-4fT" firstAttribute="top" secondItem="fpv-CU-zot" secondAttribute="bottom" constant="20" id="fg9-bv-xjf"/>
+                <constraint firstItem="CMe-S5-GWO" firstAttribute="leading" secondItem="7Wo-S4-TZZ" secondAttribute="leading" constant="10" id="m14-fC-XPs"/>
+                <constraint firstItem="YZ4-8X-ffb" firstAttribute="top" secondItem="CMe-S5-GWO" secondAttribute="bottom" constant="12" id="oWP-Tj-429"/>
+                <constraint firstItem="fpv-CU-zot" firstAttribute="top" secondItem="7Wo-S4-TZZ" secondAttribute="top" constant="10" id="zH0-eM-SSM"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="100"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="appBaseColor">
+            <color red="0.0" green="0.35686274509803922" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
