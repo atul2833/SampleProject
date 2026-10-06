@@ -1,5 +1,15 @@
 {
+  "originHash" : "5e8b3b4b87c056b143516b1b392dc675b72c684a3455ee4f525ada3091f68612",
   "pins" : [
+    {
+      "identity" : "bsimagepicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mikaoj/BSImagePicker.git",
+      "state" : {
+        "revision" : "87c300fac63538dfb26e17d491eaa2293e83b5e8",
+        "version" : "3.3.3"
+      }
+    },
     {
       "identity" : "cryptoswift",
       "kind" : "remoteSourceControl",
@@ -28,15 +38,6 @@
       }
     },
     {
-      "identity" : "openssl",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/krzyzanowskim/OpenSSL.git",
-      "state" : {
-        "revision" : "2fec2333eb8e8a6acd08bc95a6edf1c0f391c42f",
-        "version" : "3.1.4000"
-      }
-    },
-    {
       "identity" : "progresshud",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/relatedcode/ProgressHUD.git",
@@ -55,5 +56,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

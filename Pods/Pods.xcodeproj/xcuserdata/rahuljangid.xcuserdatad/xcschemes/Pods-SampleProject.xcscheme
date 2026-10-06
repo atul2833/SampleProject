@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1E0ECC47EC0125E82D99F22A05A1A038"
-               BuildableName = "Pods_TAGCredit.framework"
-               BlueprintName = "Pods-TAGCredit"
+               BlueprintIdentifier = "F376A1C67A89985A211264FDCCE868D8"
+               BuildableName = "Pods_SampleProject.framework"
+               BlueprintName = "Pods-SampleProject"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

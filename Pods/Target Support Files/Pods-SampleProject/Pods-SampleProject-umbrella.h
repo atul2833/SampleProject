@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_TAGCreditVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_TAGCreditVersionString[];
+FOUNDATION_EXPORT double Pods_SampleProjectVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SampleProjectVersionString[];
 

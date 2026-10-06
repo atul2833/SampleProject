@@ -178,7 +178,6 @@
 		811879222BA089D30002961A /* TermsAndPrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8118791F2BA089D30002961A /* TermsAndPrivacyVC.swift */; };
 		811879262BA16A760002961A /* ProfileSettingsEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811879252BA16A760002961A /* ProfileSettingsEndPoints.swift */; };
 		811879292BA16F110002961A /* ProfileResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811879282BA16F110002961A /* ProfileResponseModel.swift */; };
-		8118792A2BA1B1010002961A /* Pods_TAGCredit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E58EFA77B9540E7C50E2E0D /* Pods_TAGCredit.framework */; };
 		811879312BA1B6670002961A /* HelpCenterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811879302BA1B6670002961A /* HelpCenterViewModel.swift */; };
 		811879352BA1B89A0002961A /* HelpCenterResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811879342BA1B89A0002961A /* HelpCenterResponseModel.swift */; };
 		811879382BA1BD730002961A /* BSImagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 811879372BA1BD730002961A /* BSImagePicker */; };
@@ -341,6 +340,7 @@
 		81FBA6032BF4C1F900D67364 /* ChatImageReceivedTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81FBA5FB2BF4C1F300D67364 /* ChatImageReceivedTblCell.xib */; };
 		81FBA6072BF4C1F900D67364 /* ChatImageSendTblCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FBA5FF2BF4C1F700D67364 /* ChatImageSendTblCell.swift */; };
 		81FBA6082BF4C1F900D67364 /* ChatImageSendTblCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81FBA6002BF4C1F800D67364 /* ChatImageSendTblCell.xib */; };
+		A39CFADF5EA1B042315480B0 /* Pods_SampleProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C784EBB99DAA93EFD4F84DAD /* Pods_SampleProject.framework */; };
 		C652C0DB2C637D4600B00F25 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C652C0DA2C637D4100B00F25 /* Lato-Regular.ttf */; };
 		C65B5A052C4E930000EC98B4 /* RentalPropertiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65B5A042C4E92FF00EC98B4 /* RentalPropertiesViewModel.swift */; };
 		C65B5A072C4E930A00EC98B4 /* RentalPropertiesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65B5A062C4E930A00EC98B4 /* RentalPropertiesResponseModel.swift */; };
@@ -375,7 +375,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1E58EFA77B9540E7C50E2E0D /* Pods_TAGCredit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TAGCredit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1BFD62AA92611609AC36C1 /* Pods-SampleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleProject.debug.xcconfig"; path = "Target Support Files/Pods-SampleProject/Pods-SampleProject.debug.xcconfig"; sourceTree = "<group>"; };
 		541CE4A32B5FF67F006372D9 /* TableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewExtension.swift; sourceTree = "<group>"; };
 		541CE4AA2B611E01006372D9 /* ReusableListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableListView.swift; sourceTree = "<group>"; };
 		541CE4C42B62803C006372D9 /* CustomPopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopUpVC.swift; sourceTree = "<group>"; };
@@ -737,7 +737,9 @@
 		C6EC70A12C2D85C0008115AF /* AmountTableCellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmountTableCellVC.xib; sourceTree = "<group>"; };
 		C6EC70A42C2D8708008115AF /* TotalAmtTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalAmtTableViewCell.swift; sourceTree = "<group>"; };
 		C6EC70A52C2D8708008115AF /* TotalAmtTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalAmtTableViewCell.xib; sourceTree = "<group>"; };
+		C784EBB99DAA93EFD4F84DAD /* Pods_SampleProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10749B1F56348DADF9BAD00 /* Pods-TAGCredit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAGCredit.debug.xcconfig"; path = "Target Support Files/Pods-TAGCredit/Pods-TAGCredit.debug.xcconfig"; sourceTree = "<group>"; };
+		DA2DB41CF55960BC4954BCC8 /* Pods-SampleProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleProject.release.xcconfig"; path = "Target Support Files/Pods-SampleProject/Pods-SampleProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -745,7 +747,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8118792A2BA1B1010002961A /* Pods_TAGCredit.framework in Frameworks */,
 				811879382BA1BD730002961A /* BSImagePicker in Frameworks */,
 				5DAE6B5F2B5A663C00A847D1 /* SDWebImage in Frameworks */,
 				5DEADB2B2B71150C00CC69BA /* CryptoSwift in Frameworks */,
@@ -753,6 +754,7 @@
 				5DAE6B612B5A663C00A847D1 /* SDWebImageMapKit in Frameworks */,
 				5DAE6B642B5A667600A847D1 /* KeychainSwift in Frameworks */,
 				5DAE6B5C2B5A65AC00A847D1 /* IQKeyboardManagerSwift in Frameworks */,
+				A39CFADF5EA1B042315480B0 /* Pods_SampleProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,6 +766,8 @@
 			children = (
 				D10749B1F56348DADF9BAD00 /* Pods-TAGCredit.debug.xcconfig */,
 				89B25529D890A0B3C39E939F /* Pods-TAGCredit.release.xcconfig */,
+				2F1BFD62AA92611609AC36C1 /* Pods-SampleProject.debug.xcconfig */,
+				DA2DB41CF55960BC4954BCC8 /* Pods-SampleProject.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -771,7 +775,7 @@
 		4E18370ACB16E81273FA9CB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1E58EFA77B9540E7C50E2E0D /* Pods_TAGCredit.framework */,
+				C784EBB99DAA93EFD4F84DAD /* Pods_SampleProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2754,7 +2758,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TAGCredit-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SampleProject-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2767,19 +2771,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TAGCredit/Pods-TAGCredit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleProject/Pods-SampleProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TAGCredit/Pods-TAGCredit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleProject/Pods-SampleProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TAGCredit/Pods-TAGCredit-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleProject/Pods-SampleProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -3167,7 +3167,7 @@
 		};
 		5D02A6222B4D1EC200C0B2A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D10749B1F56348DADF9BAD00 /* Pods-TAGCredit.debug.xcconfig */;
+			baseConfigurationReference = 2F1BFD62AA92611609AC36C1 /* Pods-SampleProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -3218,7 +3218,7 @@
 		};
 		5D02A6232B4D1EC200C0B2A5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89B25529D890A0B3C39E939F /* Pods-TAGCredit.release.xcconfig */;
+			baseConfigurationReference = DA2DB41CF55960BC4954BCC8 /* Pods-SampleProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
